@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: me380_cad_v5
+    relative_path: urdf/me380_cad_v5.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/me380_cad_v5.srdf
+  CONFIG:
+    author_name: Alikasim Budhwani
+    author_email: a2budhwa@uwaterloo.ca
+    generated_timestamp: 1667330857

@@ -1,0 +1,7 @@
+/home/alikasim/wksp/me380/build/arduino_control/firmware/CMakeFiles/rebuild_cache.dir
+/home/alikasim/wksp/me380/build/arduino_control/firmware/CMakeFiles/edit_cache.dir
+/home/alikasim/wksp/me380/build/arduino_control/firmware/CMakeFiles/upload.dir
+/home/alikasim/wksp/me380/build/arduino_control/firmware/CMakeFiles/listen-upload.dir
+/home/alikasim/wksp/me380/build/arduino_control/firmware/CMakeFiles/listen-size.dir
+/home/alikasim/wksp/me380/build/arduino_control/firmware/CMakeFiles/listen.dir
+/home/alikasim/wksp/me380/build/arduino_control/firmware/CMakeFiles/mega2560_CORE.dir

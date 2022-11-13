@@ -1,0 +1,8 @@
+prefix=/home/alikasim/wksp/me380/install
+
+Name: arduino_control
+Description: Description of arduino_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/alikasim/wksp/me380/devel
+
+Name: control_msgs
+Description: Description of control_msgs
+Version: 0.0.0
+Cflags: -I/home/alikasim/wksp/me380/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

@@ -1,0 +1,8 @@
+prefix=/home/alikasim/wksp/me380/devel
+
+Name: me380_cad_v4
+Description: Description of me380_cad_v4
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

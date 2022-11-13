@@ -1,0 +1,2 @@
+arduino_control:control_380:me380_cad_v1:me380_cad_v2:me380_cad_v3:me380_cad_v4:me380_cad_v5:motor_control:moveit_conf
+-DCATKIN_DEVEL_PREFIX=/home/alikasim/wksp/me380/devel -DCMAKE_INSTALL_PREFIX=/home/alikasim/wksp/me380/install -G Unix Makefiles
