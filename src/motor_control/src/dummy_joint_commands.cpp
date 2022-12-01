@@ -6,7 +6,9 @@
 
 control_380::Motor motor;
 bool toPublish = false;
+
 void chatterCallback(const moveit_msgs::MoveGroupActionGoal::ConstPtr &msg) {
+
   motor.angles[0] =
       msg->goal.request.goal_constraints[0].joint_constraints[0].position;
  // ROS_INFO("I heard: [%f]", motor.one);
@@ -22,8 +24,13 @@ void chatterCallback(const moveit_msgs::MoveGroupActionGoal::ConstPtr &msg) {
   motor.angles[4] =
       msg->goal.request.goal_constraints[0].joint_constraints[4].position;
   ;
+ motor.angles[5] =
+      msg->goal.request.goal_constraints[0].joint_constraints[5].position;
+  ;
   toPublish = true;
+
 }
+
 int main(int argc, char **argv) {
 
   ros::init(argc, argv, "dummy_joint_commands");

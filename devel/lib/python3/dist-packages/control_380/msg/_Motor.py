@@ -8,14 +8,14 @@ import struct
 
 
 class Motor(genpy.Message):
-  _md5sum = "da37f2396c41d2822a851fce98ae8df1"
+  _md5sum = "a67c767aa0a29c85386374a6e2a5a362"
   _type = "control_380/Motor"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """float32[5] angles
+  _full_text = """float32[6] angles
 
 """
   __slots__ = ['angles']
-  _slot_types = ['float32[5]']
+  _slot_types = ['float32[6]']
 
   def __init__(self, *args, **kwds):
     """
@@ -35,9 +35,9 @@ class Motor(genpy.Message):
       super(Motor, self).__init__(*args, **kwds)
       # message fields cannot be None, assign default values for those that are
       if self.angles is None:
-        self.angles = [0.] * 5
+        self.angles = [0.] * 6
     else:
-      self.angles = [0.] * 5
+      self.angles = [0.] * 6
 
   def _get_types(self):
     """
@@ -51,7 +51,7 @@ class Motor(genpy.Message):
     :param buff: buffer, ``StringIO``
     """
     try:
-      buff.write(_get_struct_5f().pack(*self.angles))
+      buff.write(_get_struct_6f().pack(*self.angles))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -65,8 +65,8 @@ class Motor(genpy.Message):
     try:
       end = 0
       start = end
-      end += 20
-      self.angles = _get_struct_5f().unpack(str[start:end])
+      end += 24
+      self.angles = _get_struct_6f().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -94,8 +94,8 @@ class Motor(genpy.Message):
     try:
       end = 0
       start = end
-      end += 20
-      self.angles = numpy.frombuffer(str[start:end], dtype=numpy.float32, count=5)
+      end += 24
+      self.angles = numpy.frombuffer(str[start:end], dtype=numpy.float32, count=6)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -104,9 +104,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_5f = None
-def _get_struct_5f():
-    global _struct_5f
-    if _struct_5f is None:
-        _struct_5f = struct.Struct("<5f")
-    return _struct_5f
+_struct_6f = None
+def _get_struct_6f():
+    global _struct_6f
+    if _struct_6f is None:
+        _struct_6f = struct.Struct("<6f")
+    return _struct_6f

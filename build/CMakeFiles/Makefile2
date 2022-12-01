@@ -58,11 +58,9 @@ all: moveit_conf/all
 all: control_380/all
 all: motor_control/all
 all: arduino_control/all
-all: me380_cad_v1/all
-all: me380_cad_v2/all
-all: me380_cad_v3/all
-all: me380_cad_v4/all
 all: me380_cad_v5/all
+all: me380_cad_v7/all
+all: me380_cad_v8/all
 
 .PHONY : all
 
@@ -72,11 +70,9 @@ preinstall: moveit_conf/preinstall
 preinstall: control_380/preinstall
 preinstall: motor_control/preinstall
 preinstall: arduino_control/preinstall
-preinstall: me380_cad_v1/preinstall
-preinstall: me380_cad_v2/preinstall
-preinstall: me380_cad_v3/preinstall
-preinstall: me380_cad_v4/preinstall
 preinstall: me380_cad_v5/preinstall
+preinstall: me380_cad_v7/preinstall
+preinstall: me380_cad_v8/preinstall
 
 .PHONY : preinstall
 
@@ -91,11 +87,9 @@ clean: moveit_conf/clean
 clean: control_380/clean
 clean: motor_control/clean
 clean: arduino_control/clean
-clean: me380_cad_v1/clean
-clean: me380_cad_v2/clean
-clean: me380_cad_v3/clean
-clean: me380_cad_v4/clean
 clean: me380_cad_v5/clean
+clean: me380_cad_v7/clean
+clean: me380_cad_v8/clean
 
 .PHONY : clean
 
@@ -232,78 +226,6 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
-# Directory level rules for directory me380_cad_v1
-
-# Recursive "all" directory target.
-me380_cad_v1/all:
-
-.PHONY : me380_cad_v1/all
-
-# Recursive "preinstall" directory target.
-me380_cad_v1/preinstall:
-
-.PHONY : me380_cad_v1/preinstall
-
-# Recursive "clean" directory target.
-me380_cad_v1/clean:
-
-.PHONY : me380_cad_v1/clean
-
-#=============================================================================
-# Directory level rules for directory me380_cad_v2
-
-# Recursive "all" directory target.
-me380_cad_v2/all:
-
-.PHONY : me380_cad_v2/all
-
-# Recursive "preinstall" directory target.
-me380_cad_v2/preinstall:
-
-.PHONY : me380_cad_v2/preinstall
-
-# Recursive "clean" directory target.
-me380_cad_v2/clean:
-
-.PHONY : me380_cad_v2/clean
-
-#=============================================================================
-# Directory level rules for directory me380_cad_v3
-
-# Recursive "all" directory target.
-me380_cad_v3/all:
-
-.PHONY : me380_cad_v3/all
-
-# Recursive "preinstall" directory target.
-me380_cad_v3/preinstall:
-
-.PHONY : me380_cad_v3/preinstall
-
-# Recursive "clean" directory target.
-me380_cad_v3/clean:
-
-.PHONY : me380_cad_v3/clean
-
-#=============================================================================
-# Directory level rules for directory me380_cad_v4
-
-# Recursive "all" directory target.
-me380_cad_v4/all:
-
-.PHONY : me380_cad_v4/all
-
-# Recursive "preinstall" directory target.
-me380_cad_v4/preinstall:
-
-.PHONY : me380_cad_v4/preinstall
-
-# Recursive "clean" directory target.
-me380_cad_v4/clean:
-
-.PHONY : me380_cad_v4/clean
-
-#=============================================================================
 # Directory level rules for directory me380_cad_v5
 
 # Recursive "all" directory target.
@@ -320,6 +242,42 @@ me380_cad_v5/preinstall:
 me380_cad_v5/clean:
 
 .PHONY : me380_cad_v5/clean
+
+#=============================================================================
+# Directory level rules for directory me380_cad_v7
+
+# Recursive "all" directory target.
+me380_cad_v7/all:
+
+.PHONY : me380_cad_v7/all
+
+# Recursive "preinstall" directory target.
+me380_cad_v7/preinstall:
+
+.PHONY : me380_cad_v7/preinstall
+
+# Recursive "clean" directory target.
+me380_cad_v7/clean:
+
+.PHONY : me380_cad_v7/clean
+
+#=============================================================================
+# Directory level rules for directory me380_cad_v8
+
+# Recursive "all" directory target.
+me380_cad_v8/all:
+
+.PHONY : me380_cad_v8/all
+
+# Recursive "preinstall" directory target.
+me380_cad_v8/preinstall:
+
+.PHONY : me380_cad_v8/preinstall
+
+# Recursive "clean" directory target.
+me380_cad_v8/clean:
+
+.PHONY : me380_cad_v8/clean
 
 #=============================================================================
 # Directory level rules for directory motor_control

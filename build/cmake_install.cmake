@@ -135,11 +135,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/alikasim/wksp/me380/build/control_380/cmake_install.cmake")
   include("/home/alikasim/wksp/me380/build/motor_control/cmake_install.cmake")
   include("/home/alikasim/wksp/me380/build/arduino_control/cmake_install.cmake")
-  include("/home/alikasim/wksp/me380/build/me380_cad_v1/cmake_install.cmake")
-  include("/home/alikasim/wksp/me380/build/me380_cad_v2/cmake_install.cmake")
-  include("/home/alikasim/wksp/me380/build/me380_cad_v3/cmake_install.cmake")
-  include("/home/alikasim/wksp/me380/build/me380_cad_v4/cmake_install.cmake")
   include("/home/alikasim/wksp/me380/build/me380_cad_v5/cmake_install.cmake")
+  include("/home/alikasim/wksp/me380/build/me380_cad_v7/cmake_install.cmake")
+  include("/home/alikasim/wksp/me380/build/me380_cad_v8/cmake_install.cmake")
 
 endif()
 

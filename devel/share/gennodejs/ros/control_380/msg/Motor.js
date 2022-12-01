@@ -25,7 +25,7 @@ class Motor {
         this.angles = initObj.angles
       }
       else {
-        this.angles = new Array(5).fill(0);
+        this.angles = new Array(6).fill(0);
       }
     }
   }
@@ -33,11 +33,11 @@ class Motor {
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type Motor
     // Check that the constant length array field [angles] has the right length
-    if (obj.angles.length !== 5) {
-      throw new Error('Unable to serialize array field angles - length must be 5')
+    if (obj.angles.length !== 6) {
+      throw new Error('Unable to serialize array field angles - length must be 6')
     }
     // Serialize message field [angles]
-    bufferOffset = _arraySerializer.float32(obj.angles, buffer, bufferOffset, 5);
+    bufferOffset = _arraySerializer.float32(obj.angles, buffer, bufferOffset, 6);
     return bufferOffset;
   }
 
@@ -46,12 +46,12 @@ class Motor {
     let len;
     let data = new Motor(null);
     // Deserialize message field [angles]
-    data.angles = _arrayDeserializer.float32(buffer, bufferOffset, 5)
+    data.angles = _arrayDeserializer.float32(buffer, bufferOffset, 6)
     return data;
   }
 
   static getMessageSize(object) {
-    return 20;
+    return 24;
   }
 
   static datatype() {
@@ -61,13 +61,13 @@ class Motor {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'da37f2396c41d2822a851fce98ae8df1';
+    return 'a67c767aa0a29c85386374a6e2a5a362';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    float32[5] angles
+    float32[6] angles
     
     
     `;
@@ -83,7 +83,7 @@ class Motor {
       resolved.angles = msg.angles;
     }
     else {
-      resolved.angles = new Array(5).fill(0)
+      resolved.angles = new Array(6).fill(0)
     }
 
     return resolved;

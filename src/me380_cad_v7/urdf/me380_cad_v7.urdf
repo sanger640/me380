@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="me380_cad_v7">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.066171199500242 -0.181511487618111 0.089463184915841"
+        rpy="0 0 0" />
+      <mass
+        value="1.77014769465671" />
+      <inertia
+        ixx="0.00210043805116231"
+        ixy="-1.06304625112232E-05"
+        ixz="2.67176242386157E-11"
+        iyy="0.00548702149822165"
+        iyz="3.29919815496409E-09"
+        izz="0.00696124579132741" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.0120434624194553 -6.82163517617962E-08 0.03915043898334"
+        rpy="0 0 0" />
+      <mass
+        value="0.236297558132839" />
+      <inertia
+        ixx="0.000327725103159314"
+        ixy="-6.89388147916382E-20"
+        ixz="6.58315442248317E-07"
+        iyy="0.000198345267796804"
+        iyz="5.25121936355093E-10"
+        izz="0.00016290906768797" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="0.032747 -0.18382 0.13053"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="6"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.0246809858851406 0.0938584438763335 0.00991038644973094"
+        rpy="0 0 0" />
+      <mass
+        value="0.103250838013234" />
+      <inertia
+        ixx="0.000166280884898741"
+        ixy="-1.55209877075966E-06"
+        ixz="2.05722961385686E-12"
+        iyy="1.15941369022668E-05"
+        iyz="-1.18044490139455E-12"
+        izz="0.000164486267779308" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="continuous">
+    <origin
+      xyz="-0.024975 0.0099104 -0.015"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0649019107014651 0.0757804025401111 0.00675619922964291"
+        rpy="0 0 0" />
+      <mass
+        value="0.0754597178924088" />
+      <inertia
+        ixx="5.83225662345789E-05"
+        ixy="-5.1253404346648E-05"
+        ixz="6.01044971770301E-09"
+        iyy="6.27166319251453E-05"
+        iyz="7.8604894874664E-09"
+        izz="0.000111828651960116" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="continuous">
+    <origin
+      xyz="0.015 0.14353 0.00315"
+      rpy="0 0 0.82926" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.0115325048825419 -0.0317112640105645 -0.0068332124955188"
+        rpy="0 0 0" />
+      <mass
+        value="0.0291151923315562" />
+      <inertia
+        ixx="1.18081150086138E-05"
+        ixy="1.28959641188394E-06"
+        ixz="2.78449128187749E-09"
+        iyy="3.00560474264023E-06"
+        iyz="2.98703157161569E-08"
+        izz="1.04100622983534E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="continuous">
+    <origin
+      xyz="0.10337 0.094677 0"
+      rpy="3.1416 0 -0.56113" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-0.00525889282955927 0.0297846312699137 -0.00709883165865399"
+        rpy="0 0 0" />
+      <mass
+        value="0.0364758930985207" />
+      <inertia
+        ixx="6.60088061510714E-06"
+        ixy="5.7175489328298E-08"
+        ixz="-9.68482541167158E-12"
+        iyy="8.25486008623195E-06"
+        iyz="4.46003503418095E-12"
+        izz="5.20812975539413E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="continuous">
+    <origin
+      xyz="0.02125 -0.057889 -0.0089"
+      rpy="0.26813 -1.5708 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="gripper">
+    <inertial>
+      <origin
+        xyz="0.0474809921520114 -0.00824397230781637 0.0392422140337376"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514296242900853" />
+      <inertia
+        ixx="1.63228789987012E-05"
+        ixy="-4.88781819870935E-14"
+        ixz="2.11679969438411E-07"
+        iyy="8.58855686810138E-06"
+        iyz="1.03984903699826E-13"
+        izz="1.00811724090656E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://me380_cad_v7/meshes/gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_joint"
+    type="fixed">
+    <origin
+      xyz="0.035927 0.055729 0.040486"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="gripper" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

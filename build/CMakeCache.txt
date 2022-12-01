@@ -512,6 +512,18 @@ me380_cad_v5_BINARY_DIR:STATIC=/home/alikasim/wksp/me380/build/me380_cad_v5
 //Value Computed by CMake
 me380_cad_v5_SOURCE_DIR:STATIC=/home/alikasim/wksp/me380/src/me380_cad_v5
 
+//Value Computed by CMake
+me380_cad_v7_BINARY_DIR:STATIC=/home/alikasim/wksp/me380/build/me380_cad_v7
+
+//Value Computed by CMake
+me380_cad_v7_SOURCE_DIR:STATIC=/home/alikasim/wksp/me380/src/me380_cad_v7
+
+//Value Computed by CMake
+me380_cad_v8_BINARY_DIR:STATIC=/home/alikasim/wksp/me380/build/me380_cad_v8
+
+//Value Computed by CMake
+me380_cad_v8_SOURCE_DIR:STATIC=/home/alikasim/wksp/me380/src/me380_cad_v8
+
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
@@ -738,7 +750,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -7,7 +7,7 @@
 
 // Map for movement keys
 std::map<char, int> moveBindings{
-    {'a', 1}, {'j', 1}, {'s', 1}, {'k', 1}, {'d', 1}, {'l', 1},{'f', 1}, {'g',1}, {'h', 1}, {';', 1}, };
+    {'a', 1}, {'j', 1}, {'s', 1}, {'k', 1}, {'d', 1}, {'l', 1},{'f', 1}, {'g',1}, {'h', 1}, {';', 1},  {'v',1}, {'b',1}, };
 
 // Reminder message
 const char *msg = R"(
@@ -64,30 +64,38 @@ int main(int argc, char **argv) {
     motor.angles[2] = 0.0;
     motor.angles[3] = 0.0;
     motor.angles[4] = 0.0;
+    motor.angles[5] = 0.0;
 //    // If the key corresponds to a key in moveBindings
     if (moveBindings.count(key) == 1) {
 //     // Grab the direction data
       if (key == 'a') {
-        motor.angles[0]= -15.0;
+        motor.angles[0]= -10.0;
       } else if (key == 's') {
         motor.angles[1] = -5.0;
       } else if (key == 'd') {
         motor.angles[2] = -5.0;
       } else if (key == 'f') {
-        motor.angles[3] = -5.0;
+        motor.angles[3] = 5.0;
       } else if (key == 'g') {
         motor.angles[4] = -5.0;
-      } else if (key == 'h') {
-        motor.angles[0]= 15.0;
+      } 
+        else if (key == 'v') {
+        motor.angles[5] = -5.0;
+        }
+      else if (key == 'h') {
+        motor.angles[4]= 5.0;
       } else if (key == 'j') {
-        motor.angles[1] = 5.0;
+        motor.angles[3] = -5.0;
       } else if (key == 'k') {
         motor.angles[2] = 5.0;
       } else if (key == 'l') {
-        motor.angles[3] = 5.0;
+        motor.angles[1] = 5.0;
       } else if (key == ';') {
-        motor.angles[4] = 5.0;
+        motor.angles[0] = 10.0;
       }
+        else if (key == 'b') {
+        motor.angles[5] = 5.0;
+        }
 
     } 
     
@@ -98,6 +106,7 @@ int main(int argc, char **argv) {
        motor.angles[2] = 0.0;
        motor.angles[3] = 0.0;
        motor.angles[4] = 0.0;
+       motor.angles[5] = 0.0;
        if (key == '\x03') {
         break;
        }

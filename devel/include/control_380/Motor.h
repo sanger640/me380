@@ -35,7 +35,7 @@ struct Motor_
 
 
 
-   typedef boost::array<float, 5>  _angles_type;
+   typedef boost::array<float, 6>  _angles_type;
   _angles_type angles;
 
 
@@ -124,12 +124,12 @@ struct MD5Sum< ::control_380::Motor_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "da37f2396c41d2822a851fce98ae8df1";
+    return "a67c767aa0a29c85386374a6e2a5a362";
   }
 
   static const char* value(const ::control_380::Motor_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xda37f2396c41d282ULL;
-  static const uint64_t static_value2 = 0x2a851fce98ae8df1ULL;
+  static const uint64_t static_value1 = 0xa67c767aa0a29c85ULL;
+  static const uint64_t static_value2 = 0x386374a6e2a5a362ULL;
 };
 
 template<class ContainerAllocator>
@@ -148,7 +148,7 @@ struct Definition< ::control_380::Motor_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32[5] angles\n"
+    return "float32[6] angles\n"
 "\n"
 ;
   }
